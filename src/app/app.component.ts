@@ -18,7 +18,7 @@ export class AppComponent {
   email: string = '';
   contact: string = '';
 
-  adddRegistration() {
+  addRegistration() {
     this.addRegistration += 1;
   }
 
