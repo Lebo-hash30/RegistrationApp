@@ -40,24 +40,15 @@ crossorigin="anonymous">
   
     <div class="button"  style="display: flex; padding-left: 70px; margin-top: 50px; ">
 
-      <button (click)="addRegistration()"> 
-        <ng-template  [ *ngFor ] = "addRegistration > 0">
-           
-        </ng-template>
+      <button (click)> 
       Add User
       </button>
 
-      <button  (click)="deleteRegistration()">
-        <ng-template  [ *ngFor ] = "deleteRegistration == -1">
-          
-        </ng-template>
+      <button  (click)>
       Delete User
       </button>
 
-      <button  (click)="updateRegistration()">
-        <ng-template  [*ngFor] = "updateRegistration == 0">
-          
-        </ng-template>
+      <button  (click)>
       Update User
       </button>
     </div>
