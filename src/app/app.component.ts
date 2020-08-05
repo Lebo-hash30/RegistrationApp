@@ -9,25 +9,7 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'RegistrationApp';
-  registration =  new Array();
-
-  addRegistration: number = 0;
-  name: string = '';
-  surname: string = '';
-  id: string = '';
-  email: string = '';
-  contact: string = '';
-
-  adddRegistration() {
-    this.addRegistration += 1;
-  }
-
-
-
-  
-
-  
-}
+ }
 
 
 
