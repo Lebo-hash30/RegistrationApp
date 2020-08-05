@@ -32,11 +32,11 @@ crossorigin="anonymous">
   <h1  style="padding-bottom: 50px; color: aqua;">Welcome to the Registration Application!!</h1>
   
   <form class="form" [formGroup]="angForm" (ngSubmit)="onSubmit()"  style="display: grid; width: 10px; ">
-    <input placeholder="Enter First Name" maxlenght= "32" [(ngModel)]="name" formControlName="name"  [(*ngFor)]="name">
-    <input placeholder="Enter Surname" maxlenght= "20" [(ngModel)]="surname" formControlName="surname"  [(*ngFor)]="surname">
-    <input placeholder="Enter ID" maxlength="13" [(ngModel)]="id" formControlName="id"  [(*ngFor)]="id">
-    <input placeholder="Enter Email"  maxlength="32" [(ngModel)]="email" formControlName="email"  [(*ngFor)]="email">
-    <input placeholder="Enter Contact"  maxlength="10" [(ngModel)]="contact" formControlName="contact"  [(*ngFor)]="contact">
+    <input placeholder="Enter First Name" maxlenght= "32" [(ngModel)]="name">
+    <input placeholder="Enter Surname" maxlenght= "20" [(ngModel)]="surname">
+    <input placeholder="Enter ID" maxlength="13" [(ngModel)]="id">
+    <input placeholder="Enter Email"  maxlength="32" [(ngModel)]="email" >
+    <input placeholder="Enter Contact"  maxlength="10" [(ngModel)]="contact">
   
     <div class="button"  style="display: flex; padding-left: 70px; margin-top: 50px; ">
 
