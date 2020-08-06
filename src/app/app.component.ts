@@ -1,5 +1,4 @@
-import { Component } from '@angular/core'
-
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -8,8 +7,58 @@ import { Component } from '@angular/core'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'RegistrationApp';
- }
+  Firstname ;
+  Surname;
+  ID;
+  Email;
+  Contact;
+
+
+
+  
+  list :any  =[] ;
+
+  constructor( ){
+
+  }
+
+
+  addUser(){
+
+    let user = {
+      Firstname: this.Firstname ,
+      Surname: this.Surname ,
+      ID: this.ID,
+      Email : this.Email,
+      Contact: this.Contact,
+    }
+    
+this.list.push(user)  ;
+
+    console.log(this.list)
+
+
+
+  }
+
+
+  deleteUser(i){
+
+    
+    this.list.splice( i, 1)
+
+    console.log(this.deleteUser)
+
+  }
+
+  updateUser(){
+    this.list.splice(0, 4)
+    console.log(this.list)
+  }
+}
+
 
 
 
