@@ -1,2 +1,31 @@
+button{
+    width: 30%;
+    justify-content: space-between;
+    color: rgba(139, 0, 0, 0.753); 
+    background-color: rgba(0, 162, 255, 0.623);
+    margin-top: 1%;
+    font-style: italic;
+    font-size: 18pt;
+}
 
+
+input{
+    height: 50%;
+    width: 50%;
+    display: flex;
+
+}
+
+body{
+    
+    background-color: blueviolet;
+    
+    
+}
+
+
+h1{
+    padding-bottom: 50px;
+    color: aqua;
+}
 
