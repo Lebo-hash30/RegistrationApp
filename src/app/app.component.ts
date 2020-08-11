@@ -54,10 +54,19 @@ this.list.push(user)  ;
   }
 
   updateUser(){
-    this.list.splice(0, 4)
-    console.log(this.list)
+    let user = {
+      Surname: this.Surname,
+      Email: this.Email,
+      Contact: this.Contact,
+
+    
   }
+  this.list.splice(0, 1)
+    console.log(this.list)
+    this.list.push(user);
 }
+}
+
 
 
 
