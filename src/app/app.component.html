@@ -1,74 +1,131 @@
  <head>
   <meta charset="utf-8">
   <title>RegistrationApp</title>
-  <a href="#" class="logo"  style="color: red; padding-left: 50px;">Get Registered!!</a>
+  <a href="#" class="logo" style="color: red; padding-left: 50px;">Get Registered!!</a>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  
+
 
 </head>
 
 <body>
 
+  <h1>L M Abrahams Registration App!!</h1>
+  <p  style="font-size: large;">Create Your Account Now!!</p>
 
-  
 
 
 
-  <h1 >Welcome to the Registration Application!!</h1>
-  
-  <div class="form" >
-    <input placeholder="Enter First Name" [(ngModel)]="Firstname" >
-    <input placeholder="Enter Surname"  [(ngModel)]="Surname">
+  <div class="form">
+    <input placeholder="Enter First Name" [(ngModel)]="Firstname">
+     
+    <input placeholder="Enter Surname" [(ngModel)]="Surname">
+   
     <input placeholder="Enter ID" maxlength="13" [(ngModel)]="ID">
-    <input placeholder="Enter Email"  maxlength="20" [(ngModel)]="Email">
-    <input placeholder="Enter Contact"  maxlength="10" [(ngModel)]="Contact">
+   
+    <input placeholder="Enter Email" maxlength="20" [(ngModel)]="Email">
+   
+    <input placeholder="Enter Contact" maxlength="10" [(ngModel)]="Contact">
+  </div>
+
+
+  <div class="grid-items">
+
+    <img src="../assets/icon-pinterest.svg" style="padding-left: 5%;">
+    <p>
+      Follow Us
+    </p>
+    <img src="../assets/icon-twitter.svg" style="padding-left: 5%;">
+    <p>
+      Follow Us
+    </p>
+    <img src="../assets/icon-youtube.svg" style="padding-left: 5%;">
+    <p>
+      Follow Us
+    </p>
+    <img src="../assets/icon-instagram.svg" style="padding-left: 5%;">
+    <p>
+      Follow Us
+    </p>
+    <img src="../assets/icon-facebook.svg" style="padding-left: 5%;">
+    <p>
+      Follow Us
+    </p>
+
+
   </div>
   
-    <div class="button ">
-
-      <button (click)="addUser()" > 
-      Add User
-      </button>
-
-    </div>
-
-    <div class="button" >
-        <button (click)="updateUser()">
-        Update User
-        </button>
-      </div>
 
 
-    
-    
-    <router-outlet></router-outlet>
+
+
+  <div class="button "  style="padding-left: 50%; margin-top: 20px;">
+
+    <button (click)="addUser()"  style="color: maroon; font-weight: bolder;">Submit</button>
   
 
-
-
-<div *ngFor="let user of list ; let i =index">
-
-    <p>{{user.Firstname}}</p>
-    <p>{{user.Surname}}</p>
-    <p>{{user.ID}}</p>
-    <p>{{user.Email}}</p>
-    <p>{{user.Contact}}</p>
-
     
-    <button  (click)="deleteUser(i)">
-        Delete User
-        </button>
-  
-  <button (click)="updateUser()">
-      Update User
-    </button> 
 
+  </div>
+
+  <router-outlet></router-outlet>
+
+
+  <div>
+
+   
+
+
+   
+
+
+
+    <table id="customers">
+      <tr>
+        <th>First Name</th>
+        <th>Surname</th>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>Delete</th>
+        <th>Update</th>
+      </tr>
+     
+     <tr *ngFor="let user of list ; let i =index">
+        <td>{{user.Firstname}}</td>
+        <td>{{user.Surname}}</td>
+        <td>{{user.ID}}</td>
+        <td>{{user.Email}}</td>
+        <td>{{user.Contact}}</td>
+        <td> <button (click)="deleteUser(i)"  style="color: green; font-weight: bolder;">
+          Delete
+        </button>
+      </td>
+
+
+      <td> 
+        <button (click)="updateUser()"  style="color: gold;  font-weight: bolder;  margin-left: 10%;">
+          Update
+        </button>
+        
+    </td>
 
        
-   
+    
+        
+      </tr>
+     
+      
+     
+    </table>
+
+
+
+
+
   </div>
+</body>
 
   
 
